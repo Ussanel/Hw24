@@ -86,31 +86,31 @@
 // user1.getUserName(user1)
 // Завдання 5 готово але  не переписано на foreach
 
-class User {
-    #phone
-    constructor(name, phone) {
-        this.name = name
-        this.#phone = phone
-    }
+// class User {
+//     #phone
+//     constructor(name, phone) {
+//         this.name = name
+//         this.#phone = phone
+//     }
 
-    getPhone(isAdmin) {
-        if (isAdmin === true) {
-            console.log(this.#phone)
-        } else if (isAdmin === false) {
-            const arv = this.#phone.split('-')
-            console.log(arv)
-            arv.splice(1, 2, '*****')
-            let result = arv.join('-')
-            console.log(result)
-        }
-    }
+//     getPhone(isAdmin) {
+//         if (isAdmin === true) {
+//             console.log(this.#phone)
+//         } else if (isAdmin === false) {
+//             const arv = this.#phone.split('-')
+//             console.log(arv)
+//             arv.splice(1, 2, '*****')
+//             let result = arv.join('-')
+//             console.log(result)
+//         }
+//     }
 
-}
+// }
 
-let user1 = new User('Mike', '067-888-88-99')
-let user2 = new User('Tom', '099-888-88-99')
+// let user1 = new User('Mike', '067-888-88-99')
+// let user2 = new User('Tom', '099-888-88-99')
 
-user1.getPhone(false);
-user2.getPhone(false);
-user1.getPhone(true);
-user2.getPhone(true);
+// user1.getPhone(false);
+// user2.getPhone(false);
+// user1.getPhone(true);
+// user2.getPhone(true);
